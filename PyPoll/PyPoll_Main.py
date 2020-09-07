@@ -11,28 +11,27 @@ with open(csvpath) as csvfile:
     
     csv_header = next(csvreader)
 
-    voter_ids = []
-    candidates = []
+    candidates = {}
 
     for row in csvreader:
-         voter_ids.append(row[0])
+        name = row[2]
 
-         if row[2] not in candidates:
-            candidates.append(row[2])      
+        # opening the counter to define the value pair
+        if name not in candidates:
+            candidates[name] =  1
+        else:
+            candidates[name] += 1
 
-total_votes = len(voter_ids)
+    print(candidates)
+    
+    # for key, value in candidates.items()
 
-def candidate_summary(candidate):
-    for row in csvreader:
-        
-        vote_count = []
+    # take the key and value of the dictionary and turn in to tuple
 
-        if candidate == row(2):
-            vote_count.append(row(0))
+    # find the max value from this and return the key
 
-    vote_percent = len(vote_count) / total_votes * 100
-    return print(f"{candidate}: {vote_percent}% ({vote_count})")
 
-    for candidate in candidates:
-        candidate_summary
 
+
+
+   
