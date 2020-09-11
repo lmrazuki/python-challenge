@@ -1,5 +1,8 @@
-There are 86 months
-The total profit for this period is: $38382578
-The average change is: $446309.05
-The lowest month was Sep-2013 with a loss of: $-1196225
-The greatest month was Feb-2012 with a profit of: $1170593
+The winner is Khan
+=========================
+Khan: 2218231 (63.00%)
+Correy: 704200 (20.00%)
+Li: 492940 (14.00%)
+O'Tooley: 105630 (3.00%)
+=========================
+There were 3521001 votes cast
